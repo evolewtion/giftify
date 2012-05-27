@@ -1,0 +1,186 @@
+/* @override http://giftify.dev/inc/css/style.css */
+
+/* Eric Meyer's Reset Reloaded *//* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}/* remember to define focus styles! */
+:focus {outline: 0;}/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+.clear
+{
+	clear: both;
+}
+
+body
+{
+	background-color: #494a4a;
+}
+
+#header
+{
+	width: 100%;
+	height: 100px;
+	background-color: #1d1d1d;
+	position: fixed;
+}
+
+#logo
+{
+	float: right;
+	margin-top: 10px;
+	margin-right: 60px;
+}
+
+#list-container
+{
+	width: 940px;
+	margin: 0 auto;
+}
+
+#grey-bar
+{
+	width: 100%;
+	height: auto;
+	position: fixed;
+}
+
+#top-row
+{
+	background-color: #151515;
+	height: auto;
+	width: 930px;
+	position: fixed;
+	padding-left: 10px;
+}
+
+.list-input
+{
+	color: #a9a9a9;
+	font-size: 18px;
+	float: left;
+	overflow: hidden;
+	padding-right: 10px;
+	margin-top: 15px;
+}
+
+#list
+{
+	color: #acaeab;
+	font-size: 20px;
+	clear: both;
+}
+
+#left-content {
+	width: 70%;
+	background-color: #fafbf9;
+	margin-top: 45px;
+	float: left;
+}
+
+#right-content {
+	float: left;
+	width: 272px;
+	margin-top: 45px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #ededed;
+	margin-left: 10px;
+}
+
+#right-content p
+{
+	background-color: #262626;
+	padding: 10px;
+	margin-top: 10px;
+	border-right: 5px solid #bff0c6;
+}
+
+#days
+{
+	color: #d5fddb;
+	font: 50px Georgia, "Times New Roman", Times, serif;
+	text-shadow: #000 1px 1px 1px;
+	text-align: center;
+}
+
+
+
+.info-box {
+	height: auto;
+	width: 272px;
+	/*background-color: #1f1f1f;*/
+	color: #d8d8d8;
+	margin-bottom: 5px;
+	position: fixed;
+}
+
+table.modern
+{
+	color: #878787;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 100%;
+}
+
+table.modern tr
+{
+	border-bottom: 1px solid #f7f7f7;
+	background-color: #ececec;
+}
+
+td#recipient {
+	width: 100px;
+	overflow: hidden;
+}
+
+table.modern tr#heading
+{
+	font-weight: bold;
+}
+
+table.modern td
+{
+	padding: 10px;
+}
+
+#is_bought
+{
+	margin-left: 15px;
+}
+#is_delivered
+{
+	margin-left:25px;
+}
+#is_wrapped
+{
+	margin-left: 30px;
+}
+#is_sent
+{
+	margin-left: 30px;
+}
+
+/*td#recipient {
+	width: 95px;
+}
+
+td#gift_name {
+	width: 115px;
+}
+
+td#price {
+	width: 115px;
+}*/
+
+#footer
+{
+	background-color: #262626;
+	width: 638px;
+	height: auto;
+	padding: 10px;
+	color: #d7d7d7;
+	font: 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 40px;
+}
