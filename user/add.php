@@ -1,5 +1,5 @@
 <?php  
-	require_once('inc/db/connect.php'); // DB connection details
+	require_once('../inc/db/connect.php'); // DB connection details
 			
 	function addGift() {
 		// Variables

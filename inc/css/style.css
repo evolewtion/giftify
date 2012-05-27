@@ -1,4 +1,4 @@
-/* @override http://giftify.dev/inc/css/style.css */
+/* @override http://www.appisode.co.uk/giftify/inc/css/style.css */
 
 /* Eric Meyer's Reset Reloaded *//* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
@@ -15,9 +15,40 @@ table {border-collapse: collapse;border-spacing: 0;}
 	clear: both;
 }
 
+.green {
+	border-left: 7px solid #32bb17;
+}
+
+.red {
+	border-left: 7px solid #bb1717;
+}
+
+.orange {
+	border-left: 7px solid #ba6b17;
+}
+
+.editable {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+span.editable input {
+	width: 50px;
+}
+
+span.error {
+	padding: 10px;
+	margin: 10px 0px;
+	font-family: "Lucida Grande";
+	font-size: 15px;
+	color:#ed6f6f;
+}
+
 body
 {
 	background-color: #494a4a;
+	background-image: url('../img/top.jpg');
+	background-repeat: repeat-x;
 }
 
 #header
@@ -27,6 +58,7 @@ body
 	background-color: #1d1d1d;
 	position: fixed;
 }
+
 
 #logo
 {
@@ -67,6 +99,10 @@ body
 	margin-top: 15px;
 }
 
+input#price {
+	margin-right: 10px;
+}
+
 #list
 {
 	color: #acaeab;
@@ -74,20 +110,28 @@ body
 	clear: both;
 }
 
+#gift {
+	vertical-align: middle;
+}
+
+#gift p {
+	padding-bottom: 10px;
+}
+
 #left-content {
 	width: 70%;
 	background-color: #fafbf9;
-	margin-top: 45px;
+	margin-top: 55px;
 	float: left;
 }
 
 #right-content {
 	float: left;
-	width: 272px;
+	width: 265px;
 	margin-top: 45px;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #ededed;
-	margin-left: 10px;
+	margin-left: 17px;
 }
 
 #right-content p
@@ -95,26 +139,29 @@ body
 	background-color: #262626;
 	padding: 10px;
 	margin-top: 10px;
-	border-right: 5px solid #bff0c6;
+	border-right: 5px solid #f2f2f2;
 }
-
-#days
-{
-	color: #d5fddb;
-	font: 50px Georgia, "Times New Roman", Times, serif;
-	text-shadow: #000 1px 1px 1px;
-	text-align: center;
-}
-
-
 
 .info-box {
 	height: auto;
-	width: 272px;
+	width: 265px;
 	/*background-color: #1f1f1f;*/
 	color: #d8d8d8;
 	margin-bottom: 5px;
 	position: fixed;
+}
+
+.delete {
+	width: 32px;
+	height: 32px;
+	background-image: url(../../img/delete.png);
+	background-position-x: 32px;
+	background-position-y: 0px;
+}
+
+.delete:hover {
+	background-position-x: 0px;
+	background-position-y: 32px;
 }
 
 table.modern
@@ -128,16 +175,6 @@ table.modern tr
 {
 	border-bottom: 1px solid #f7f7f7;
 	background-color: #ececec;
-}
-
-td#recipient {
-	width: 100px;
-	overflow: hidden;
-}
-
-table.modern tr#heading
-{
-	font-weight: bold;
 }
 
 table.modern td
@@ -182,5 +219,5 @@ td#price {
 	padding: 10px;
 	color: #d7d7d7;
 	font: 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
