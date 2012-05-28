@@ -32,4 +32,5 @@
 		$total = mysql_num_rows($result);
 		return $total;
 	}
+	
 ?>
